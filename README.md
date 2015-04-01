@@ -1,19 +1,22 @@
 # Graph API
 
-This package allows you to get a users profile picture url.
-
-
-## Quickstart
+This package allows you to get a users profile picture url from Facebook.
 
 See [the core package](https://github.com/dferber90/meteor-graph-api).
 
 
+## Quickstart
+
+```js
+
+facebook = new GraphAPI();
+var profilePictureUrl = facebook.getProfilePictureUrl(fbUserId);
+
+```
+
 ## Extending the GraphAPI
 
-This package is written in a way that lets you easily extend its funcitonality.
-Simply extend the GraphAPI prototype with your desired capability.
-
-The `getProfilePictureUrl` is implemented like this:
+The `getProfilePictureUrl` is implemented like [this](https://github.com/dferber90/meteor-graph-api-get-profile-picture-url/blob/master/graph.js):
 
 ```js
 
@@ -29,12 +32,11 @@ GraphAPI.prototype.getProfilePictureUrl = function (userId) {
 
 Here, `this.get` starts a new HTTP GET request to the Graph API.
 The first parameter is an array which will be transformed into the Graph API edge.
-For example `[userId, 'picture']` will be transforemd to `/<userId>/picture`, so
+For example `[userId, 'picture']` will be transformed to `/<userId>/picture`, so
 the request will be made to `https://graph.facebook.com/v2.2/<userId>/picture`.
 
 
 
-# License
 # License
 The MIT License (MIT)
 
