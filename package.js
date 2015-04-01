@@ -13,3 +13,18 @@ Package.onUse(function(api) {
 	api.use(['dferber:graph-api', 'underscore', 'http'], 'server');
 	api.addFiles(['graph.js'], 'server');
 });
+
+
+
+/*
+	Run tests with
+		meteor test-packages --driver-package respondly:test-reporter
+
+	More information:
+		https://blog.respond.ly/testing-meteor-packages-with-mocha/
+ */
+Package.onTest(function(api){
+	api.use(['mike:mocha-package', 'practicalmeteor:chai']);
+
+	api.addFiles('tests/getProfilePictureUrl.js', ['server']);
+});
