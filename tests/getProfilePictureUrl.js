@@ -17,7 +17,7 @@ describe('Graph API', function () {
 				}
 			});
 
-			it('returns a string', function() {
+			it('returns the url', function() {
 				var validUrl = 'https://www.facebook.com/profile-picture.jpg';
 
 				facebook.__response = {
