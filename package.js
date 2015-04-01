@@ -27,5 +27,7 @@ Package.onTest(function(api){
 	api.use(['mike:mocha-package', 'practicalmeteor:chai']);
 
 	api.use(['dferber:graph-api', 'underscore', 'http'], 'server');
+	api.use(['dferber:graph-api-get-profile-picture-url'], 'server');
+
 	api.addFiles('tests/getProfilePictureUrl.js', ['server']);
 });
