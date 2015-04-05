@@ -1,8 +1,8 @@
 Package.describe({
-	name: 'dferber:graph-api-get-profile-picture-url',
+	name: 'dferber:graph-api-get-profile-picture',
 	version: '0.0.1',
-	summary: 'Get a Facebook users profile picture URL on the server.',
-	git: 'https://github.com/dferber90/meteor-graph-api-get-profile-picture-url',
+	summary: 'Get a Facebook users profile picture on the server.',
+	git: 'https://github.com/dferber90/meteor-graph-api-get-profile-picture',
 	documentation: 'README.md'
 });
 
