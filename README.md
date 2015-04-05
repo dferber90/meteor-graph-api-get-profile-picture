@@ -23,7 +23,7 @@ The `getProfilePicture` is implemented like [this](https://github.com/dferber90/
 
 ```js
 
-GraphAPI.prototype.getProfilePictur = function (userId) {
+GraphAPI.prototype.getProfilePicture = function (userId) {
 	var response = this.get([userId, 'picture'], {
 		redirect: false
 	});
