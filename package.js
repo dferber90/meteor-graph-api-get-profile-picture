@@ -10,7 +10,7 @@ Package.onUse(function(api) {
 	'use strict';
 	
 	api.versionsFrom('1.0.3.2');
-	api.use(['dferber:graph-api', 'underscore', 'http'], 'server');
+	api.use(['dferber:graph-api@0.0.1', 'underscore', 'http'], 'server');
 	api.addFiles(['graph.js'], 'server');
 });
 
