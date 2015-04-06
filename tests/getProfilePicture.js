@@ -2,7 +2,7 @@
 
 describe('Graph API', function () {
 	describe('Methods', function() {
-		describe('getProfilePictureUrl', function () {
+		describe('getProfilePicture', function () {
 
 			var facebook;
 
@@ -20,6 +20,11 @@ describe('Graph API', function () {
 			it('returns the url', function() {
 				var validUrl = 'https://www.facebook.com/profile-picture.jpg';
 
+				var data = {
+					is_silhouette: false,
+					url: validUrl
+				};
+
 				facebook.__response = {
 					statusCode: 200,
 					data: {
@@ -32,7 +37,7 @@ describe('Graph API', function () {
 					}
 				};
 
-				expect(facebook.getProfilePictureUrl()).to.equal(validUrl);
+				expect(facebook.getProfilePicture()).to.equal(data);
 			});
 		});
 	});
