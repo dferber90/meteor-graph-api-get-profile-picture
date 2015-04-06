@@ -28,9 +28,7 @@ describe('Graph API', function () {
 				facebook.__response = {
 					statusCode: 200,
 					data: {
-						data: {
-							url: validUrl
-						}
+						data: data
 					},
 					headers: {
 
